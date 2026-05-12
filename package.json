@@ -1,0 +1,60 @@
+{
+  "name": "dsa-cpp-snippets",
+  "displayName": "DSA C++ Snippets",
+  "description": "Premium C++ snippets for Data Structures, Algorithms, and Competitive Programming.",
+  "version": "1.0.0",
+  "publisher": "AliAlgo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alinawaz/AliAlgo.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "cpp",
+    "dsa",
+    "snippets",
+    "competitive programming",
+    "data structures",
+    "algorithms"
+  ],
+  "activationEvents": [
+    "onLanguage:cpp"
+  ],
+  "main": "./out/extension.js",
+  "bin": {
+    "alialgo": "./bin/alialgo.js"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "cpp",
+        "path": "./snippets/cpp.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "help": "node bin/alialgo.js --help"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "18.x",
+    "typescript": "^5.3.3",
+    "eslint": "^8.56.0",
+    "glob": "^10.3.10",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
