@@ -1,8 +1,8 @@
 # AliAlgo: Data Structures and Algorithms for C++
 
-AliAlgo is a comprehensive VS Code extension designed for competitive programmers, computer science students, and software engineers. It provides a library of over 100 high-quality C++ snippets covering the most essential data structures and algorithms.
+AliAlgo is a comprehensive VS Code extension designed for competitive programmers, computer science students, and software engineers. It provides a library of high-quality C++ snippets covering the most essential data structures and algorithms, all implemented from scratch.
 
-Unlike traditional snippet libraries that offer only code fragments, every snippet in AliAlgo is a complete, standalone, and compilable C++ file. This allows you to instantly run and test the logic without any additional boilerplate.
+Unlike traditional snippet libraries that rely on standard headers, every snippet in AliAlgo is a complete, standalone, and compilable C++ file using only #include <iostream>. This ensures you understand the core logic of every data structure without relying on the STL.
 
 ## Core Features
 
