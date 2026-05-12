@@ -1,13 +1,19 @@
 # AliAlgo: Data Structures and Algorithms for C++
 
-AliAlgo is a comprehensive VS Code extension designed for competitive programmers, computer science students, and software engineers. It provides a library of high-quality C++ snippets covering the most essential data structures and algorithms, all implemented from scratch.
+AliAlgo is a beginner-friendly VS Code extension providing high-quality C++ snippets for essential data structures and algorithms. Every snippet is implemented from scratch using clean, readable C++ classes and standard iostream.
 
-Unlike traditional snippet libraries that rely on standard headers, every snippet in AliAlgo is a complete, standalone, and compilable C++ file using only #include <iostream>. This ensures you understand the core logic of every data structure without relying on the STL.
+Unlike complex libraries, AliAlgo focuses on "easier codes"—straightforward logic that is easy to learn and modify. Every snippet is a complete, standalone file that you can compile and run instantly.
 
 ## Core Features
 
+### Class-Based Implementations
+All data structures like Linked Lists, Stacks, and Queues are implemented using C++ classes for better organization and clarity.
+
+### Easier Logic
+We use simple, readable code patterns to ensure students and beginners can understand the core mechanics of each algorithm without getting lost in advanced syntax.
+
 ### Complete Standalone Files
-Every snippet generates a full C++ program including necessary headers like bits/stdc++.h and a main function. You can copy the generated code, compile it with any standard C++ compiler, and it will run immediately.
+Every snippet generates a full C++ program including necessary headers like iostream and a main function. You can copy the generated code, compile it with any standard C++ compiler, and it will run immediately.
 
 ### Integrated Demonstrations
 The main function of each snippet contains a working demonstration. For example, the linked list snippets include code to create a list, insert values, and print the results. This makes it easy to understand how to use the data structure in a real-world scenario.
