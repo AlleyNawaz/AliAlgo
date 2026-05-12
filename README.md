@@ -1,69 +1,91 @@
-# AliAlgo — DSA C++ Snippets
+# AliAlgo: Data Structures and Algorithms for C++
 
-A production-ready VS Code extension providing 100+ high-quality, standalone, and compilable C++ snippets for Data Structures and Algorithms.
+AliAlgo is a comprehensive VS Code extension designed for competitive programmers, computer science students, and software engineers. It provides a library of over 100 high-quality C++ snippets covering the most essential data structures and algorithms.
 
-## 🚀 Features
+Unlike traditional snippet libraries that offer only code fragments, every snippet in AliAlgo is a complete, standalone, and compilable C++ file. This allows you to instantly run and test the logic without any additional boilerplate.
 
-- **100+ Snippets**: Covering everything from Basic Boilerplate to Advanced Graphs and Dynamic Programming.
-- **Standalone Files**: Every snippet is a complete `.cpp` file. Just trigger, and you have a runnable program.
-- **Integrated Demos**: Every `main()` function includes a working demonstration of the algorithm or data structure.
-- **CLI Support**: Comes with a built-in CLI tool `alialgo` to explore snippets from your terminal.
+## Core Features
 
-## 🛠 Installation
+### Complete Standalone Files
+Every snippet generates a full C++ program including necessary headers like bits/stdc++.h and a main function. You can copy the generated code, compile it with any standard C++ compiler, and it will run immediately.
 
-1. Open **VS Code**.
-2. Go to **Extensions** (Ctrl+Shift+X).
-3. Search for **AliAlgo** (if published) or install the `.vsix` file.
+### Integrated Demonstrations
+The main function of each snippet contains a working demonstration. For example, the linked list snippets include code to create a list, insert values, and print the results. This makes it easy to understand how to use the data structure in a real-world scenario.
 
-## 💻 CLI Usage
+### Built-in CLI Tool
+The extension includes a command-line interface called alialgo. This tool allows you to browse the entire snippet library, filter by category, and check version details directly from your terminal.
 
-Once installed globally, you can use the `alialgo` command:
+## Installation
 
+### VS Code Extension Marketplace
+1. Open Visual Studio Code.
+2. Navigate to the Extensions view by clicking the square icon on the left sidebar or pressing Ctrl+Shift+X.
+3. Search for "AliAlgo".
+4. Click Install.
+
+### Manual Installation
+1. Download the alialgo-1.0.0.vsix file.
+2. In VS Code, go to the Extensions view.
+3. Click the "..." menu at the top right of the sidebar.
+4. Select "Install from VSIX..." and choose the downloaded file.
+
+## Snippet Catalog
+
+The snippets are organized by prefixes to help you find what you need quickly. Below is a summary of the available categories:
+
+| Category | Prefix | Examples |
+|----------|--------|----------|
+| Boilerplate | cpp- | Main template with fast I/O, debug macros |
+| Linked Lists | ll- | Singly/Doubly nodes, reverse, cycle detection, merge sorted |
+| Stacks | stack- | Array/LL implementations, balanced parentheses, min stack |
+| Queues | queue- | Circular queues, priority queues, sliding window maximum |
+| Trees | tree- | BST operations, traversals (inorder, level-order, zigzag), LCA |
+| AVL Trees | avl- | Balanced insertion, left/right rotations, balance factors |
+| Heaps | heap- | Max/Min heaps, Kth largest element, merge K sorted arrays |
+| Graphs | graph- | BFS, DFS, Dijkstra, Bellman-Ford, MST (Prim/Kruskal), DSU |
+| Tries | trie- | Full trie implementation with search and prefix matching |
+| Dynamic Programming | dp- | Knapsack, LCS, LIS, Coin Change, Matrix Chain Multiplication |
+| Sorting | sort- | Quick sort, Merge sort, Radix sort, Counting sort |
+| Searching | search- | Binary search (iterative/recursive), Rotated array search |
+| Mathematical Utilities | math- | Sieve of Eratosthenes, GCD/LCM, Modular exponentiation |
+
+## Command Line Interface
+
+If you have the extension installed globally, you can use the alialgo command to explore the library.
+
+### Show All Snippets
+Use the help command to see a formatted table of all available snippets and their descriptions.
 ```bash
-# Show all snippets in a formatted table
 alialgo --help
+```
 
-# Filter snippets by category
+### Filter by Category
+You can filter the library to see only snippets related to a specific topic.
+```bash
 alialgo --list trees
+```
 
-# Check version
+### Check Version
+```bash
 alialgo --version
 ```
 
-## 📚 Snippet Categories
+## Contributing and Development
 
-| Category | Prefix | Snippets |
-|----------|--------|----------|
-| **Boilerplate** | `cpp-` | Main Template, Debug Macros |
-| **Linked Lists**| `ll-`  | Insert, Delete, Reverse, Cycle Detection, Middle, Merge |
-| **Stacks**      | `stack-`| Array/LL/STL, Balanced Parentheses, Next Greater, Min Stack |
-| **Queues**      | `queue-`| Array/LL/STL, Deque, Priority Queue, Sliding Window |
-| **Trees**       | `tree-` | BST (Insert/Search/Delete), Traversals (BFS/DFS/Zigzag), LCA, Height |
-| **AVL Trees**   | `avl-`  | Rotations, Balanced Insertion |
-| **Heaps**       | `heap-` | Manual Max Heap, STL Min Heap, Kth Largest, Merge K Sorted |
-| **Graphs**      | `graph-`| BFS/DFS, Cycle Detection, Dijkstra, Bellman-Ford, Floyd-Warshall, MST |
-| **Tries**       | `trie-` | Full Trie Implementation |
-| **DP**          | `dp-`   | Knapsack, LCS, LIS, Coin Change, Matrix Chain |
-| **Sorting**     | `sort-` | Bubble, Selection, Insertion, Merge, Quick, Counting, Radix |
-| **Searching**   | `search-`| Binary Search, Lower/Upper Bound, Rotated Search |
-| **Math**        | `math-` | GCD, LCM, Sieve, Fast Pow, Modular Exp, IsPrime |
+If you would like to contribute to AliAlgo or set up a local development environment, follow these steps:
 
-## 🏗 Development
+1. Clone the repository:
+   git clone https://github.com/AlleyNawaz/AliAlgo.git
 
-```bash
-# Clone the repo
-git clone https://github.com/AlleyNawaz/AliAlgo.git
+2. Install dependencies:
+   npm install
 
-# Install dependencies
-npm install
+3. Compile the source code:
+   npm run compile
 
-# Compile the extension
-npm run compile
+4. Link the CLI tool globally for testing:
+   npm install -g .
 
-# Link CLI globally for testing
-npm install -g .
-```
+## License
 
-## 📄 License
-
-MIT
+This project is licensed under the MIT License. See the LICENSE file for more details.
