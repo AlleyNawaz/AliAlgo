@@ -52,7 +52,7 @@ alialgo --version
 
 ```bash
 # Clone the repo
-git clone https://github.com/alinawaz/AliAlgo.git
+git clone https://github.com/AlleyNawaz/AliAlgo.git
 
 # Install dependencies
 npm install
